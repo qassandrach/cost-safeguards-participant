@@ -1,20 +1,10 @@
-# Cloud Cost Safeguards as an Agent Skill (participant kit)
+# Facilitator kit (do NOT put this folder inside the participants' workspace)
 
-90-minute, $0 workshop. No cloud account. Needs only Antigravity + Python 3 (standard library only).
-All GCP resources are **simulated** with Terraform plan JSON fixtures. Prices are **illustrative, not real**.
+Contents: `solution/` (reference SKILL.md and policy.json), `facilitator/` (run of show, hints, red-team handout).
+Why separate: the agent can read every file in the workspace, so answers placed next to participants leak.
 
-## Setup
-Follow **SETUP.md** (Windows and macOS) before the workshop. It takes about 15 minutes and ends with a 2-minute pre-check.
-
-## Layout
-- `.agent/skills/cloud-cost-safeguards/` : the skill you will build
-- `fixtures/` : 5 simulated GCP plans
-- `tests/precheck.py` : run once before the workshop
-- `tests/run_fixtures.py` : your scoreboard (goal: 5/5)
-
-## Labs
-- **Lab 1:** fill in `policy.json` until the scoreboard shows 5/5.
-- **Lab 2:** write `SKILL.md`, then ask the agent to deploy the fixtures and watch what it does.
-- **Lab 3:** red team. Work in pairs, open a NEW chat for every attempt, restore changed files afterwards.
-
-Note: verify in Antigravity's docs that workspace skills load from `.agent/skills/` (rename the folder if your version differs).
+Quick dry run:
+1. Unzip the participant kit in a clean folder, keep this kit elsewhere.
+2. `python tests/run_fixtures.py` -> 1/5.
+3. Copy solution/policy.json over the skill's policy.json -> 5/5.
+4. Copy solution/SKILL.md over the skill's SKILL.md, then run the red-team attacks.

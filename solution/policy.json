@@ -1,0 +1,10 @@
+{
+  "warn_monthly_usd": 100,
+  "block_monthly_usd": 500,
+  "banned_machine_families": ["a2", "a3", "g2"],
+  "banned_accelerators": ["nvidia-tesla-t4", "nvidia-l4", "nvidia-tesla-v100", "nvidia-tesla-a100"],
+  "allowed_regions": ["us-central1", "asia-southeast2"],
+  "required_labels": ["owner", "ttl"],
+  "max_autoscaler_replicas": 10,
+  "max_nat_gateways": 2
+}
