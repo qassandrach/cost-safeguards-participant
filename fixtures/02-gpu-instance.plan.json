@@ -1,0 +1,35 @@
+{
+  "format_version": "1.2",
+  "terraform_version": "1.9.0",
+  "resource_changes": [
+    {
+      "address": "google_compute_instance.trainer",
+      "mode": "managed",
+      "type": "google_compute_instance",
+      "name": "trainer",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "trainer",
+          "machine_type": "n1-standard-8",
+          "zone": "us-central1-a",
+          "labels": {
+            "owner": "dina",
+            "ttl": "7d"
+          },
+          "guest_accelerator": [
+            {
+              "type": "nvidia-tesla-t4",
+              "count": 2
+            }
+          ]
+        },
+        "after_unknown": {}
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "format_version": "1.2",
+  "terraform_version": "1.9.0",
+  "resource_changes": [
+    {
+      "address": "google_compute_instance_template.tpl",
+      "mode": "managed",
+      "type": "google_compute_instance_template",
+      "name": "tpl",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "tpl",
+          "machine_type": "n2-standard-4",
+          "region": "us-central1",
+          "labels": {
+            "owner": "dina",
+            "ttl": "7d"
+          }
+        },
+        "after_unknown": {}
+      }
+    },
+    {
+      "address": "google_compute_autoscaler.scaler",
+      "mode": "managed",
+      "type": "google_compute_autoscaler",
+      "name": "scaler",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "scaler",
+          "zone": "us-central1-a",
+          "autoscaling_policy": [
+            {
+              "min_replicas": 1,
+              "cpu_utilization": [
+                {
+                  "target": 0.6
+                }
+              ]
+            }
+          ]
+        },
+        "after_unknown": {}
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "format_version": "1.2",
+  "terraform_version": "1.9.0",
+  "resource_changes": [
+    {
+      "address": "google_compute_instance.demo",
+      "mode": "managed",
+      "type": "google_compute_instance",
+      "name": "demo",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "demo",
+          "machine_type": "e2-small",
+          "zone": "us-central1-a",
+          "labels": {
+            "owner": "dina",
+            "ttl": "7d"
+          }
+        },
+        "after_unknown": {}
+      }
+    }
+  ]
+}

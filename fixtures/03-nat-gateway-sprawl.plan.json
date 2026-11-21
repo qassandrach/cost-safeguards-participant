@@ -1,0 +1,263 @@
+{
+  "format_version": "1.2",
+  "terraform_version": "1.9.0",
+  "resource_changes": [
+    {
+      "address": "google_compute_router.r0",
+      "mode": "managed",
+      "type": "google_compute_router",
+      "name": "r0",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "r0",
+          "region": "us-central1"
+        },
+        "after_unknown": {}
+      }
+    },
+    {
+      "address": "google_compute_address.ip0",
+      "mode": "managed",
+      "type": "google_compute_address",
+      "name": "ip0",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "ip0",
+          "region": "us-central1"
+        },
+        "after_unknown": {}
+      }
+    },
+    {
+      "address": "google_compute_router_nat.nat0",
+      "mode": "managed",
+      "type": "google_compute_router_nat",
+      "name": "nat0",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "nat0",
+          "region": "us-central1"
+        },
+        "after_unknown": {}
+      }
+    },
+    {
+      "address": "google_compute_router.r1",
+      "mode": "managed",
+      "type": "google_compute_router",
+      "name": "r1",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "r1",
+          "region": "us-central1"
+        },
+        "after_unknown": {}
+      }
+    },
+    {
+      "address": "google_compute_address.ip1",
+      "mode": "managed",
+      "type": "google_compute_address",
+      "name": "ip1",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "ip1",
+          "region": "us-central1"
+        },
+        "after_unknown": {}
+      }
+    },
+    {
+      "address": "google_compute_router_nat.nat1",
+      "mode": "managed",
+      "type": "google_compute_router_nat",
+      "name": "nat1",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "nat1",
+          "region": "us-central1"
+        },
+        "after_unknown": {}
+      }
+    },
+    {
+      "address": "google_compute_router.r2",
+      "mode": "managed",
+      "type": "google_compute_router",
+      "name": "r2",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "r2",
+          "region": "us-central1"
+        },
+        "after_unknown": {}
+      }
+    },
+    {
+      "address": "google_compute_address.ip2",
+      "mode": "managed",
+      "type": "google_compute_address",
+      "name": "ip2",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "ip2",
+          "region": "us-central1"
+        },
+        "after_unknown": {}
+      }
+    },
+    {
+      "address": "google_compute_router_nat.nat2",
+      "mode": "managed",
+      "type": "google_compute_router_nat",
+      "name": "nat2",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "nat2",
+          "region": "us-central1"
+        },
+        "after_unknown": {}
+      }
+    },
+    {
+      "address": "google_compute_router.r3",
+      "mode": "managed",
+      "type": "google_compute_router",
+      "name": "r3",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "r3",
+          "region": "us-central1"
+        },
+        "after_unknown": {}
+      }
+    },
+    {
+      "address": "google_compute_address.ip3",
+      "mode": "managed",
+      "type": "google_compute_address",
+      "name": "ip3",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "ip3",
+          "region": "us-central1"
+        },
+        "after_unknown": {}
+      }
+    },
+    {
+      "address": "google_compute_router_nat.nat3",
+      "mode": "managed",
+      "type": "google_compute_router_nat",
+      "name": "nat3",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "nat3",
+          "region": "us-central1"
+        },
+        "after_unknown": {}
+      }
+    },
+    {
+      "address": "google_compute_forwarding_rule.lb",
+      "mode": "managed",
+      "type": "google_compute_forwarding_rule",
+      "name": "lb",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "lb",
+          "region": "us-central1"
+        },
+        "after_unknown": {}
+      }
+    },
+    {
+      "address": "google_compute_instance.app",
+      "mode": "managed",
+      "type": "google_compute_instance",
+      "name": "app",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "app",
+          "machine_type": "e2-medium",
+          "zone": "us-central1-a",
+          "labels": {
+            "owner": "dina",
+            "ttl": "7d"
+          }
+        },
+        "after_unknown": {}
+      }
+    }
+  ]
+}

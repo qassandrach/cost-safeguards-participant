@@ -1,0 +1,11 @@
+{
+  "_instructions": "LAB 1: replace every null with a value. null = rule not enforced. Ask the facilitator for hints.",
+  "warn_monthly_usd": null,
+  "block_monthly_usd": null,
+  "banned_machine_families": null,
+  "banned_accelerators": null,
+  "allowed_regions": null,
+  "required_labels": null,
+  "max_autoscaler_replicas": null,
+  "max_nat_gateways": null
+}
