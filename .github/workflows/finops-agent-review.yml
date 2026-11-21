@@ -1,0 +1,31 @@
+name: FinOps Skill Review
+
+on:
+  pull_request:
+    paths:
+      - "fixtures/**.json"
+      - "policy.yaml"
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  finops-review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run Gemini CLI with SKILL.md
+        uses: google-github-actions/run-gemini-cli@v0
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        with:
+          prompt: |
+            Use the gcp-finops-guard skill to inspect changed files in fixtures/,
+            run scripts/check_cost.py and scripts/check_policy.py, and summarize
+            any policy violations without modifying any files.
